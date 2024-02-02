@@ -1,0 +1,25 @@
+<!-- SECTION DIALOG -->
+<div class="overviewDialog">
+    <form [formGroup]="sectiondialogForm">
+        <div class="closeDialog">
+            <i class="fa fa-times xClose" (click)="closeDialog()" aria-hidden="true"></i>
+        </div>
+
+        <div class="openDialog">
+            <div class="form-group">
+                <label for="title" class="lableTitle">Section Title</label>
+                <input formControlName="sectionTitle" [(ngModel)]="sectionTitle" placeholder="Enter title" type="text" (ngModelChange)="prependHyphen($event)" class="text-size form-control createDoc" name="title">
+            </div>
+
+            <div class="form-group">
+                <label for="title" class="lableTitle">Section Content</label>
+                <textarea formControlName="section" [(ngModel)]="section" placeholder="Enter your content" class="text-size form-control textareaDoc"  rows="3" cols="50"></textarea>
+            </div>
+
+            <div class="overviewSave">
+                <button type="submit" (click)="save()" class="btn btn-default btnsave savecls">Save</button>
+            </div>
+
+        </div>
+    </form>
+</div>
