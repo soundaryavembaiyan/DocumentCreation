@@ -231,6 +231,18 @@ export class DoceditorComponent {
   //   // console.log('Formvalues:', formValues);
   //   console.log('formValues:', formValues);
 
+      // const result: { [key: string]: string } = {};
+    // this.childFormData.forEach((item: any) => {
+    //   const key = Object.keys(item)[0];
+    //   if (key && item[key]) {
+    //     result[key] = item[key];
+    //     //console.log('reskey',result[key])
+    //   }
+    // });
+    // console.log('res',result)
+    // let combinedObject2 = { ...result, ...this.myForm.value };
+    // console.log('combinedObject2:', combinedObject2);
+
   //   let latexDocument = `\\documentclass{article}<ltk>\\usepackage{geometry}<ltk>\\geometry{a4paper,total={170mm,257mm},left=20mm,top=20mm}<ltk>\\title{${combinedObject2.title}}<ltk>\\author{${combinedObject2.author}}<ltk>\\date{${combinedObject2.date}}<ltk>\\begin{document}<ltk>\\maketitle`
    
   //   if (combinedObject2.overview) { latexDocument += `<ltk>\\abstract${combinedObject2.overview}`}
